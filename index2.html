@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Haruka Ishihara</title>
+  <!-- ここでCSSを読み込む -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- //jQueryのライブラリの読み込み -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- //トグルボタンが押されたときに、クラスを付与 -->
+<script type="text/javascript">
+$(function() {
+$('.Toggle').click(function() {
+$(this).toggleClass('active');
+
+if ($(this).hasClass('active')) {
+$('.NavMenu').addClass('active'); //クラスを付与
+} else {
+$('.NavMenu').removeClass('active'); //クラスを外す
+}
+});
+});
+</script>
+</head>
+
+<body>
+<!-- ナビメニュー部分 -->
+<nav class="NavMenu">
+    <ul>
+    <li><a href="#profile">PROFILE</a></li>
+    <li><a href="#activity">ACTIVITY</a></li>
+    <li><a href="#future">FUTURE</a></li>
+    </ul>
+    </nav>
+    <!-- ハンバーガーメニュー部分 --> 
+    <div class="Toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+      <!-- header
+      <div class="header">
+        header左側 -->
+        <!-- <div class="header-left">
+            <img src="img/S__9011218.jpg" alt="Seedkun"> -->
+            <!-- <span class="name">❤  Haruka Ishihara</span>
+        </div> -->
+        <!-- header右側 -->
+        <!-- <div class="header-right">
+            <div>PROFILE</div>
+            <div>ACTIVITY</div>
+            <div>FUTURE</div>
+        </div>
+    </div> -->
+    <!-- headerここまで -->
+
+    <!-- welcome -->
+    <div class="welcome">
+      <h1 class="title">Haruka Ishihara's Portfolio</h1>
+      <ul class="guideline">
+          <li>Be the change</li>
+          <li>Be the best</li>
+          <li>Be myself</li>
+      </ul>
+  </div>
+  <!-- welcomeここまで -->
+
+    <!-- profile -->
+    <h3 class="profile_title" id="profile">PROFILE</h3>
+    <div class="profile">
+      <div>
+        <img class="curriculum-img" src="img/S__9027602.jpg" alt="programming">
+      </div>
+      <div class="text-box">
+        <p class="description">
+          ✓Haruka Ishihara<br>✓Okinawa,Japan<br>✓3rd year of University<br>✓Travel,Dance,Youtube,Music,Dog<br>✓Studing English and programming in Cebu<br>✓instagram:@ahrn_810
+        </p>
+      </div>
+    </div>
+    <!-- profileここまで -->
+
+    <!-- can -->
+    <div class="activity" id="activity">
+    <h3 class="can_title">ACTIVITY</h3>
+    <div class="can">
+        <div class="hidden_box">
+            <label for="label1"><img class="img" src="img/S__9068548.jpg" alt="カメラ"></label>
+            <input type="checkbox" id="label1"/>
+            <div class="hidden_show">
+              <!--非表示ここから-->
+                <p>CAMERA<br><br>I often take pictures.<br> I'm good at taking pictures of people.<br>I sometimes make videos too.<br>Please check my Instagram.
+                </p>
+              <!--ここまで-->
+            </div>
+        </div>
+        <div class="hidden_box">
+            <label for="label2"><img class="img" src="img/S__9011218.jpg" alt="学校の様子"></label>
+            <input type="checkbox" id="label2"/>
+            <div class="hidden_show">
+              <!--非表示ここから-->
+                <p>SCHOOL<br><br>I am studying tourism at university.<br>I know what is important<br>in developing tourism.<br>I'm learning about tourism<br>in Okinawa specializing in tourism,<br>and it will be useful for you.
+                </p>
+              <!--ここまで-->
+            </div>
+        </div>
+        <div class="hidden_box">
+            <label for="label3"><img class="img" src="img/S__9068546.jpg" alt="インターンシップ"></label>
+            <input type="checkbox" id="label3"/>
+            <div class="hidden_show">
+              <!--非表示ここから-->
+                <p>INTERNSHIP<br><br>I often do internships.<br>I have done internships both<br>in Japan and outside of Japan.<br>Now we are working on an Okinawa<br>program with a company in Tokyo.
+                </p>
+              <!--ここまで-->
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- FUTURE -->
+    <h3 class="future_title" id="future">FUTURE</h3>
+    <div class="future">
+        <div class="hidden_box2">
+            <label for="label4">After 3month!</label>
+            <input type="checkbox" id="label4"/>
+            <div class="hidden_show2">
+              <!--非表示ここから-->
+                <p>I will be able to speak English<br>smoothly and I will be able<br>to create a cool website.<br>Also, I want to have a network of connections<br>made around the world here!</p>
+              <!--ここまで-->
+            </div>
+        </div>
+        <div class="hidden_box2">
+            <label for="label5">After 10years!</label>
+            <input type="checkbox" id="label5"/>
+            <div class="hidden_show2">
+              <!--非表示ここから-->
+                <p>I will always be thinking of new things,<br>challenging new things,<br>and creating a world that we have never seen.<br>I want to work in the world using a network!</p>
+              <!--ここまで-->
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <p>Copyright (c) Haruka Ishihara. inc</p>
+    </div>
+    <!-- footerここまで -->
+    <!-- <script src="js/app.js"></script> -->
+</body>
+</html>
